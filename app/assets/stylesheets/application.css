@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,178 @@
  *= require_tree .
  *= require_self
  */
+
+ html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    background-color: #12687e;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    padding-left: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+
+div#blog_list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+p.shadow a {
+    text-shadow: 1.5px 1px rgb(22, 17, 17);
+}
+
+.blog * {
+    font-size: 1.4rem;
+}
+
+#blog_blog {
+    margin-top: 1.5rem;
+    height: 6rem;
+    width: 21rem;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    background-color:#154360;
+    color:#3691DA;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    margin-top: 4rem;
+}
+
+.btn a {
+    text-align: center;
+    padding: 1.5rem 5.3rem;
+    background-color: #073049;
+    color: #488181;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn a:hover {
+    color:#3b5c77;
+}
+
+input[type="submit"] {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    margin-right: 2.5rem;
+    width: 7rem;
+    padding: 1rem 0.5rem;
+    background-color: #040b11;
+    color: rgb(102, 64, 64);
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#wrapper input[type="submit"] {
+    margin-right: 0;
+}
+
+input[type="submit"]:hover {
+    color: #0c1e29;
+    cursor: pointer;
+}
+
+.submit {
+    width: 21rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#check_data {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+table.table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 1.5rem;
+}
+
+th {
+    background-color: #2eaf89;
+}
+
+th, td {
+    padding: 10px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+td.function {
+    text-align: right;
+    width: 15%;
+}
+
+.content{
+    text-align: left;
+}
+
+table.show{
+    border-collapse: collapse;
+    width: 30%;
+    text-align: center;
+}
+
+.list-table {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(27, 20, 20);
+}
+
+a:hover {
+    color: #3990c7;
+}
+
+.blog {
+    margin: 1.5rem;
+}
+
+footer {
+    box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.51);
+    width: 100%;
+    height: 5%;
+    position: relative;
+    background-color: #12687e;
+    margin-top: 5rem;
+    display: table;
+}
+
+footer p {
+    margin: 0.7rem;
+}

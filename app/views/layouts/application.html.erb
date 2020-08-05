@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Tweet</title>
+
+<head>
+    <title>Welcome From My Tweet Blog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+</head>
 
-  <body>
+<body>
+    <nav>
+        <a>
+            Tweet Chat
+        </a>
+        <div>
+            <a><%= link_to 'New Blog', new_blog_path %></a>
+            <a><%= link_to 'Blog List', blogs_path %></a>
+        </div>
+    </nav>
     <%= yield %>
-  </body>
+    <footer>
+        <p>Thank you for your cooperation</p>
+    </footer>
+</body>
+
 </html>

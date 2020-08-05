@@ -1,7 +1,7 @@
 <%= form_with(model: @blog, local: true, url: choose_new_or_edit ) do |form| %>
   <% if @blog.errors.any? %>
     <div id="error_explanation">
-      <h2><%= @blog.errors.count %>There is an error.</h2>
+      <h2><%= @blog.errors.count %> error.</h2>
       <ul>
       <% @blog.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -9,10 +9,9 @@
       </ul>
     </div>
   <% end %>
-  <div class="blog_title">
+  <div class="blog">
     <%= form.label :content %>
     <%= form.text_field :content %>
   </div>
   <%= form.submit %>
 <% end %>
-<%= link_to "Back to Blog List Screen", blogs_path %>
