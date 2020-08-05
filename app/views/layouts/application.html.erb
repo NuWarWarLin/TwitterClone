@@ -12,13 +12,17 @@
 
 <body>
     <nav>
-        <a>
-            Tweet Chat
-        </a>
-        <div>
-            <a><%= link_to 'New Blog', new_blog_path %></a>
-            <a><%= link_to 'Blog List', blogs_path %></a>
-        </div>
+        <ul>
+            <li id="left">
+                <a><%= link_to 'Tweet Chat', root_path %></a>
+            </li>
+            <li class="right">
+                <a><%= link_to 'New Blog', new_blog_path %></a>
+            </li>
+            <li class="right">
+                <a><%= link_to 'Blog List', blogs_path %></a>
+            </li>
+        </ul>
     </nav>
     <%= yield %>
     <footer>
