@@ -29,11 +29,16 @@ body {
     background-attachment: fixed;
 }
 
+.container {
+    height: 100vh;
+}
+
 nav {
     margin: 0 auto;
     position: relative;
     box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.51);
-    background-color: #12687e;
+    /* background-color: #12687e; */
+    background-color: #3691DA;
     height: 30px;
     font-size: 1.5rem;
     padding-top: 15px;
@@ -88,7 +93,7 @@ div#blog_list {
 }
 
 p.shadow a {
-    text-shadow: 1.5px 1px rgb(22, 17, 17);
+    text-shadow: 1.5px 1px rgb(146, 143, 143);
 }
 
 .blog * {
@@ -101,11 +106,16 @@ p.shadow a {
     width: 21rem;
     padding: 0.7rem;
     box-sizing: border-box;
-    background-color:#154360;
-    color:#3691DA;
+    /* background-color:#154360; */
+    background-color: #3691DA;
+    color: black;
     outline: none;
     border: 2px solid black;
     border-radius: 5px;
+}
+
+#blog_blog::-webkit-scrollbar {
+    display: none;
 }
 
 .btn {
@@ -115,15 +125,15 @@ p.shadow a {
 .btn a {
     text-align: center;
     padding: 1.5rem 5.3rem;
-    background-color: #073049;
-    color: #488181;
+    background-color: #3691DA;
+    color:#FDFEFE;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
 }
 
 .btn a:hover {
-    color:#3b5c77;
+    color:#154360;
 }
 
 input[type="submit"] {
@@ -132,8 +142,8 @@ input[type="submit"] {
     margin-right: 2.5rem;
     width: 7rem;
     padding: 1rem 0.5rem;
-    background-color: #040b11;
-    color: rgb(102, 64, 64);
+    background-color: #3691DA;
+    color:#fff;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -144,7 +154,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    color: #0c1e29;
+    color: #154360;
     cursor: pointer;
 }
 
@@ -167,7 +177,7 @@ table.table {
 }
 
 th {
-    background-color: #2eaf89;
+    background-color: #3691DA;
 }
 
 th, td {
@@ -204,7 +214,7 @@ a {
 }
 
 a:hover {
-    color: #3990c7;
+    color:#154360;
 }
 
 .blog {
@@ -215,10 +225,11 @@ footer {
     box-shadow: 0px -4px 5px 0px rgba(0,0,0,0.51);
     width: 100%;
     height: 5%;
-    position: relative;
-    background-color: #12687e;
+    position: fixed;
+    background-color: #3691DA;
     margin-top: 5rem;
     display: table;
+    bottom: 0em;
 }
 
 footer p {
