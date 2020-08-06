@@ -37,7 +37,6 @@ nav {
     margin: 0 auto;
     position: relative;
     box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.51);
-    /* background-color: #12687e; */
     background-color: #3691DA;
     height: 30px;
     font-size: 1.5rem;
@@ -106,7 +105,6 @@ p.shadow a {
     width: 21rem;
     padding: 0.7rem;
     box-sizing: border-box;
-    /* background-color:#154360; */
     background-color: #3691DA;
     color: black;
     outline: none;
